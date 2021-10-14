@@ -13,7 +13,9 @@ public class ThreeOper2 {
 	public static void main(String[] args) {
 				int score = 12;
 				
-				char grade= (score >= 90) ? 'A' : ((score >= 80) ? 'B' : ((score >= 70) ? 'C' : ((score >= 60) ? 'D' : 'F')));
+				if 
+				
+//				char grade= (score >= 90) ? 'A' : ((score >= 80) ? 'B' : ((score >= 70) ? 'C' : ((score >= 60) ? 'D' : 'F')));
 				System.out.printf("score(%d), grade(%c)\n", score, grade);
 
 	}
