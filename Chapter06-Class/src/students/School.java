@@ -1,6 +1,7 @@
 package students;
 
 public class School {
+	int schoolcd;
 	String name;
 	String buildyear;
 	String address;
@@ -17,12 +18,17 @@ public class School {
 		this.telno = t;
 	}
 
+	void setSchooCd(int cd) {
+		this.schoolcd = cd;
+	}
+
 	void setTelno(String t) {
 		this.telno = t;
 	}
 
 	public void printSchool() {
 		System.out.println("<학교정보>");
+		System.out.printf("학교코드 : %d\n", this.schoolcd);
 		System.out.printf("학교이름 : %s\n", this.name);
 		System.out.printf("학교설립연도 : %s\n", this.buildyear);
 		System.out.printf("학교주소 : %s\n", this.address);

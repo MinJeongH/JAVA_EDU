@@ -7,19 +7,20 @@ public class Studentmain {
 
 		Student_03 student = new Student_03("1234", "홍길동", "기계공학", "3학년", school);
 
-		student.printStudent();
+		student.printStudent("홍길동");
 		System.out.println("****************************");
 
-		Student_03 student2 = new Student_03("1234", "홍길동", "기계공학", "3학년", school);
+		Student_03 student2 = new Student_03("1234", "동길이", "기계공학", "3학년", school);
 		// Student_03 student2 = new Student_03(student);
 
 		student2.setSchool(new School("서울대", "1960", "서울시 관악구", "02-493-5843"));
-		student2.printStudent();
+		student2.printStudent("동길이");
 
 		School school2 = student2.getSchool();
 		school2.setTelno("02-4982-5893");
+		school2.setSchooCd(7);
 		System.out.println("****************************");
-		student2.printStudent();
+		student2.printStudent("동길이");
 
 	}
 

@@ -29,7 +29,7 @@ public class Student_03 {
 
 	/*
 	 * public Student_03(Student_03 student) { this.sno = sno; this.name = name;
-	 * this.subject = subject; this.major = major; this.school = school; }
+	 * this.subject = subject; this.major = major; this.school = school;}
 	 */
 
 	School getSchool() {
@@ -40,8 +40,8 @@ public class Student_03 {
 		this.school = school;
 	}
 
-	public void printStudent() {
-		System.out.println("<학생정보>");
+	public void printStudent(String title) {
+		System.out.printf("<학생정보 : %s>\n", title);
 
 		if (this.sno == null) {
 			System.out.println("학생정보가 비어 있습니다.");
